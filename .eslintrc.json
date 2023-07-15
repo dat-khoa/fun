@@ -1,10 +1,13 @@
 
 {
-  "extends": ["next", "next/core-web-vitals", "eslint:recommended"],
+  "extends": ["next/babel","next/core-web-vitals","prettier"],
+  "plugins": ["prettier"],
   "globals": {
     "React": "readonly"
   },
   "rules": {
-    "no-unused-vars": "warn"
+    "prettier/prettier": ["error"],
+    "no-unused-vars": "warn",
+    "quotes": [2, "single", { "avoidEscape": true }]
   }
 }
